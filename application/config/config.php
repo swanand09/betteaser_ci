@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/formulaire_ISS/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,8 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
+//$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,7 @@ $config['index_page'] = 'index.php';
 |
 */
 $config['uri_protocol']	= 'AUTO';
+//$config['uri_protocol']	= 'PATH_INFO';
 
 /*
 |--------------------------------------------------------------------------
@@ -57,7 +59,7 @@ $config['uri_protocol']	= 'AUTO';
 | http://codeigniter.com/user_guide/general/urls.html
 */
 
-$config['url_suffix'] = '';
+$config['url_suffix'] = '.html';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +71,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'french';
 
 /*
 |--------------------------------------------------------------------------
@@ -126,8 +128,8 @@ $config['subclass_prefix'] = 'MY_';
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
-$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
-
+//$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+$config['permitted_uri_chars'] = 'a-z 0-9~%?=&.:_\-';
 
 /*
 |--------------------------------------------------------------------------
@@ -156,6 +158,7 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 */
 $config['allow_get_array']		= TRUE;
 $config['enable_query_strings'] = FALSE;
+//$config['enable_query_strings'] = TRUE;
 $config['controller_trigger']	= 'c';
 $config['function_trigger']		= 'm';
 $config['directory_trigger']	= 'd'; // experimental not currently in use
@@ -224,7 +227,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '35235E99DDDD83CAA3C459C4FE28EDFD7F593609D30394CEA6243EF152FCF5F0';
 
 /*
 |--------------------------------------------------------------------------
@@ -248,7 +251,7 @@ $config['sess_cookie_name']		= 'ci_session';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;
-$config['sess_use_database']	= FALSE;
+$config['sess_use_database']	= TRUE;
 $config['sess_table_name']		= 'ci_sessions';
 $config['sess_match_ip']		= FALSE;
 $config['sess_match_useragent']	= TRUE;
