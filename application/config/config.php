@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/formulaire_ISS/';
+$config['base_url']	= 'http://localhost/betteaser_ci/';
 
 /*
 |--------------------------------------------------------------------------

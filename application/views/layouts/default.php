@@ -97,34 +97,5 @@ Copyright &copy; 2013 BetTeaser International Ltd<br><br>PLEASE BET RESPONSIBLY 
                BetTeaser.com is an online sportsbook and gambling destination, we are a fully licensed sports betting website.            </div><!-- footer -->
         </div><!-- footer-stretch -->
       
-      
-      
-      
-      
-      
-   <!-- <div id="container showgrid">-->
-    <div id="page">
-      <div>
-          <?php echo image('logo_mediaserv.png');?>            
-      </div>
-      <h3>ISS</h3>
-    <!--  <div class="span-12">-->
-       <div id="iss_contenu">
-           <?php
-           if($template['title']!='title | login'&& $template['title']!='title | Création nouveau utilisateur')
-           {
-           ?>
-           <div style="float:right;">
-                <?php echo anchor('frontend/logout', 'deloguer', 'title="deloguer"');?>
-           </div>
-            <?php }?>
-           <div  <?php
-           if($template['title']!='login')
-           {
-           ?>style="clear:both;"<?php }?>>
-                 <?php echo $template['partials']['iss_contenu'];?>
-           </div>    
-       </div>  
-    </div>
   </body>
 </html>
